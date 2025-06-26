@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Disfruta de las mejores hamburguesas gourmet de Jerez de la Frontera en La Delicia. Ingredientes frescos, sabor auténtico y ambiente único." />
+  <meta name="description"
+    content="Disfruta de las mejores hamburguesas gourmet de Jerez de la Frontera en La Delicia. Ingredientes frescos, sabor auténtico y ambiente único." />
   <meta name="keywords" content="hamburguesas, gourmet, restaurante, comida, La Delicia" />
   <meta name="author" content="La Delicia" />
   <link rel="icon" href="./logo.ico" type="image/x-icon" />
@@ -37,6 +39,15 @@
 
     .card-img-top {
       height: 250px;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
     .gallery img {
@@ -105,6 +116,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">Clásica</h5>
               <p class="card-text text-muted">Carne jugosa, queso cheddar y pan artesanal.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -116,6 +128,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">BBQ</h5>
               <p class="card-text text-muted">Salsa barbacoa casera, cebolla crujiente y bacon ahumado.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -128,6 +141,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">Vegetariana</h5>
               <p class="card-text text-muted">Con lechuga, tomate y pepinillos.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -139,6 +153,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">Smash Burguer Simple</h5>
               <p class="card-text text-muted">Con dos carnes smash, queso y mucho amor.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -149,6 +164,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">Smash Burguer con Queso y Bacon</h5>
               <p class="card-text text-muted">Con dos carnes smash, bacon ahumado y salsa cheddar.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -159,6 +175,7 @@
             <div class="card-body text-center">
               <h5 class="card-title fw-bold">La Delicia Smash</h5>
               <p class="card-text text-muted">La smash burguer especial de La Delicia.</p>
+              <p class="card-text"><small class="text-muted">Precio: 12,90€</small></p>
             </div>
           </div>
         </div>
@@ -168,25 +185,25 @@
   </section>
 
   <!-- Elaboración -->
-  <section class="py-5 bg-light" id="elaboracion">
+  <section class="py-3 py-md-5 bg-light" id="elaboracion">
     <div class="container">
       <h2 class="mb-4 text-center">Elaboración</h2>
       <div id="elaboracionCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./IMG_3449.JPG" class="d-block w-100 rounded shadow" alt="Elaboración">
+            <img src="./IMG_3449.JPG" class="d-block w-100 rounded shadow img-fluid" alt="Elaboración">
           </div>
           <div class="carousel-item">
-            <img src="./Smash-1.jpg" class="d-block w-100 rounded shadow" alt="Elaboración">
+            <img src="./Smash-1.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Elaboración">
           </div>
           <div class="carousel-item">
-            <img src="./franc_haddock_smash_burguer_01227.jpg" class="d-block w-100 rounded shadow" alt="Elaboración">
+            <img src="./franc_haddock_smash_burguer_01227.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Elaboración">
           </div>
           <div class="carousel-item">
-            <img src="./smashburgerbutcherandchef71.jpg" class="d-block w-100 rounded shadow" alt="Elaboración">
+            <img src="./smashburgerbutcherandchef71.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Elaboración">
           </div>
           <div class="carousel-item">
-            <img src="./smash-burger-madrid-2023.jpg" class="d-block w-100 rounded shadow" alt="Elaboración">
+            <img src="./smash-burger-madrid-2023.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Elaboración">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#elaboracionCarousel" data-bs-slide="prev">
@@ -212,8 +229,7 @@
           <p><strong>Teléfono:</strong> <a href="tel:+34956123456">956 123 456</a></p>
         </div>
         <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.google.com/maps?q=Avenida+Rafa+Verd%C3%BA,+Jerez+de+la+Frontera&output=embed"
+          <iframe src="https://www.google.com/maps?q=Avenida+Rafa+Verd%C3%BA,+Jerez+de+la+Frontera&output=embed"
             width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
           </iframe>
         </div>
@@ -230,19 +246,16 @@
         objetivo es ofrecer una experiencia única en cada bocado. ¡Ven a visitarnos y disfruta de un ambiente acogedor y
         familiar!
       </p>
-      <div class="d-flex justify-content-center gap-3 mt-3">
-        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3 text-primary"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3 text-danger"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3 text-info"></i></a>
-      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Hamburguesería La Delicia - Jerez de la Frontera</p>
-    </div>
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-2">Síguenos en redes sociales:</p>
+    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+    <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+    <p class="mt-3 mb-0">&copy; 2025 La Delicia. Todos los derechos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
